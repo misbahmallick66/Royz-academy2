@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#6845e8">
+<meta name="robots" content="noindex">
+<title>Checkout | Royz Academy</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+body{background:var(--soft)}.nav{background:#fff}.nav .wrap{height:64px}.secure{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:#287d4e}
+.page{padding:36px 0 80px}.crumbs{font-size:13px;color:var(--muted);margin-bottom:10px}.crumbs a:hover{color:var(--purple)}.page h1{font-size:clamp(30px,4vw,40px);margin-bottom:28px}
+.layout{display:grid;grid-template-columns:1.25fr .75fr;gap:28px;align-items:start}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px}.card+.card{margin-top:20px}.card h2{font-size:18px;display:flex;align-items:center;gap:12px;margin-bottom:20px}.num{width:28px;height:28px;border-radius:50%;background:var(--ink);color:#fff;font:700 13px "DM Sans";display:grid;place-items:center}
+.methods{display:grid;grid-template-columns:1fr 1fr;gap:12px}.m{position:relative}.m input{position:absolute;opacity:0;inset:0;cursor:pointer;margin:0}.m span{display:flex;gap:12px;align-items:center;border:1.5px solid var(--line);border-radius:14px;padding:15px 16px;font-weight:700;font-size:14px;transition:border-color .2s,background .2s}.m small{display:block;font-weight:400;color:var(--muted);font-size:11.5px;line-height:1.3}.m i{width:38px;height:38px;border-radius:11px;background:#f3f0ff;color:var(--purple);display:grid;place-items:center;font:800 11px Manrope;font-style:normal}
+.m input:checked+span{border-color:var(--purple);background:#f8f6ff}.m input:focus-visible+span{outline:2px solid var(--purple);outline-offset:2px}
+.panel{margin-top:18px;padding-top:18px;border-top:1px dashed var(--line)}.panel p{font-size:13px;margin-top:10px}
+.sum{position:sticky;top:20px}.sum h2{margin-bottom:16px}.ctitle{font:800 17px Manrope;letter-spacing:-.03em;margin:16px 0 4px}.cmeta{font-size:12px;color:var(--purple);font-weight:700}
+.coupon{display:flex;gap:8px;margin:22px 0 4px}.coupon input{flex:1;min-width:0;font:inherit;font-size:14px;text-transform:uppercase;padding:12px 14px;border-radius:11px;border:1px solid var(--line);outline:none}.coupon input:focus{border-color:var(--purple)}.coupon button{border:1.5px solid var(--ink);background:#fff;border-radius:11px;padding:0 18px;font:700 13px "DM Sans";cursor:pointer}.coupon button:hover{background:var(--ink);color:#fff}
+.cmsg{font-size:12px;min-height:18px}.cmsg.ok{color:#287d4e}.cmsg.err{color:#c0392b}
+.ln{display:flex;justify-content:space-between;font-size:14px;margin:12px 0;color:var(--muted)}.ln.disc{color:#287d4e;font-weight:700}.ln.total{border-top:1px solid var(--line);padding-top:16px;margin-top:16px;color:var(--ink);font:800 22px Manrope;letter-spacing:-.03em}
+.terms{display:flex;gap:10px;align-items:flex-start;font-size:12px;color:var(--muted);margin:18px 0;line-height:1.5}.terms input{margin-top:3px;accent-color:var(--purple);width:16px;height:16px}
+.sum .btn{width:100%;padding:16px}.err{font-size:13px;color:#c0392b;min-height:20px;margin-top:10px}.assure{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;font-size:11.5px;color:var(--muted);margin-top:14px}
+.done{max-width:540px;margin:40px auto;text-align:center;background:#fff;border:1px solid var(--line);border-radius:24px;padding:48px 32px}.done .tick{width:68px;height:68px;border-radius:50%;background:#e6f6ec;color:#287d4e;display:grid;place-items:center;margin:0 auto 20px}.done h1{font-size:30px;margin-bottom:10px}.done p{margin-bottom:8px;font-size:14px}.done dl{display:grid;grid-template-columns:auto 1fr;gap:10px 20px;text-align:left;background:var(--soft);border-radius:14px;padding:18px 20px;margin:22px 0;font-size:13.5px}.done dt{color:var(--muted)}.done dd{margin:0;font-weight:700;text-align:right}.done .cta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.sum{position:static;order:-1}}@media(max-width:520px){.methods{grid-template-columns:1fr}.card{padding:22px}.secure span{display:none}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="/" aria-label="Royz Academy home"><img src="assets/logo.webp" width="30" height="38" alt=""><span><b>Royz Academy</b><small>LEARN • GROW • SUCCEED</small></span></a>
+  <div class="secure"><span data-i="lock" data-s="18"></span><span>Secure checkout</span></div>
+</div></header>
+
+<main class="wrap page" id="page">
+  <div class="crumbs"><a href="/#courses">Courses</a> / Checkout</div>
+  <h1>Checkout</h1>
+  <form class="layout" id="co" novalidate>
+    <div>
+      <div class="card"><h2><span class="num">1</span>Student details</h2>
+        <div class="grid2">
+          <div class="field full"><label for="name">Full name *</label><input id="name" autocomplete="name" required minlength="2" placeholder="As on your ID"></div>
+          <div class="field"><label for="phone">Mobile number *</label><input id="phone" type="tel" inputmode="numeric" autocomplete="tel-national" required maxlength="14" placeholder="10-digit number"></div>
+          <div class="field"><label for="email">Email *</label><input id="email" type="email" autocomplete="email" required placeholder="For your receipt"></div>
+        </div>
+      </div>
+      <div class="card"><h2><span class="num">2</span>Payment method</h2>
+        <div class="methods" role="radiogroup" aria-label="Payment method">
+          <label class="m"><input type="radio" name="m" value="upi" checked><span><i>UPI</i><div>UPI<small>GPay, PhonePe, Paytm, any app</small></div></span></label>
+          <label class="m"><input type="radio" name="m" value="card"><span><i>CARD</i><div>Cards<small>Credit &amp; debit, RuPay</small></div></span></label>
+          <label class="m"><input type="radio" name="m" value="netbanking"><span><i>BANK</i><div>Net Banking<small>All major banks</small></div></span></label>
+          <label class="m"><input type="radio" name="m" value="wallet"><span><i>PAY</i><div>Wallets<small>Mobile wallets</small></div></span></label>
+        </div>
+        <div class="panel" data-p="upi"><div class="field"><label for="vpa">UPI ID (optional)</label><input id="vpa" placeholder="name@bank" autocomplete="off" autocapitalize="off"></div><p>Leave empty to pick an app or scan a QR on the next screen.</p></div>
+        <div class="panel" data-p="card" hidden><p style="margin:0">Card details are entered in the secure payment window. They never touch our servers.</p></div>
+        <div class="panel" data-p="netbanking" hidden><div class="field"><label for="bank">Choose your bank</label><select id="bank"><option value="">Select bank (or choose later)</option><option value="SBIN">State Bank of India</option><option value="HDFC">HDFC Bank</option><option value="ICIC">ICICI Bank</option><option value="UTIB">Axis Bank</option><option value="KKBK">Kotak Mahindra Bank</option><option value="PUNB">Punjab National Bank</option><option value="BARB">Bank of Baroda</option><option value="YESB">Yes Bank</option><option value="IDFB">IDFC FIRST Bank</option></select></div><p>Other banks are available on the next screen.</p></div>
+        <div class="panel" data-p="wallet" hidden><p style="margin:0">You will choose your wallet on the next screen.</p></div>
+      </div>
+    </div>
+
+    <aside class="card sum" aria-label="Order summary">
+      <h2>Order summary</h2>
+      <div class="field"><label for="course">Course</label><select id="course" required><option value="">Loading courses…</option></select></div>
+      <div class="ctitle" id="ctitle"></div><div class="cmeta" id="cmeta"></div>
+      <div class="coupon"><input id="code" placeholder="Coupon code" maxlength="30" autocomplete="off" aria-label="Coupon code"><button type="button" id="apply">Apply</button></div><div class="cmsg" id="cmsg" role="status" aria-live="polite"></div>
+      <div class="ln"><span>Course fee</span><span id="price">₹0</span></div>
+      <div class="ln disc" id="drow" hidden><span>Coupon discount</span><span id="disc"></span></div>
+      <div class="ln total"><span>Total</span><span id="total">₹0</span></div>
+      <label class="terms"><input type="checkbox" id="terms"><span>I confirm my details are correct and agree to the academy's enrolment terms and refund policy.</span></label>
+      <button class="btn primary" type="submit" id="pay" disabled>Select a course</button><div class="err" id="err" role="alert"></div>
+      <div class="assure"><span>Secured by Razorpay</span>·<span>UPI, Cards, Net Banking, Wallets</span></div>
+    </aside>
+  </form>
+</main>
+
+<script src="assets/app.js"></script>
+<script>
+const st={list:[],course:null,code:'',discount:0,busy:false};
+const q=new URLSearchParams(location.search);
+const WA=o=>`https://wa.me/918981722243?text=${encodeURIComponent(`Hi Royz Academy, I want to enrol in ${st.course.title}.\nOrder: ${o||'-'}\nName: ${$('#name').value}\nPhone: ${$('#phone').value}${st.code?'\nCoupon: '+st.code:''}`)}`;
+
+function totals(){
+  const c=st.course;
+  $('#ctitle').textContent=c?c.title:'';$('#cmeta').textContent=c?`${c.duration} · ${c.mode}`:'';
+  $('#price').textContent=c?rupee(c.price):'₹0';$('#drow').hidden=!st.discount;$('#disc').textContent='− '+rupee(st.discount);
+  $('#total').textContent=c?rupee(c.price-st.discount):'₹0';
+  const b=$('#pay');b.disabled=!c||st.busy;b.textContent=c?`Pay ${rupee(c.price-st.discount)} securely`:'Select a course';
+}
+function pick(id){
+  st.course=st.list.find(c=>c.id===id)||null;st.code='';st.discount=0;$('#code').value='';$('#cmsg').textContent='';$('#err').textContent='';
+  $('#course').value=st.course?st.course.id:'';totals();
+  history.replaceState(null,'',st.course?`?course=${st.course.id}`:location.pathname);
+  document.title=(st.course?st.course.title+' | ':'')+'Checkout | Royz Academy';
+}
+catalog().then(d=>{
+  st.list=d.courses.filter(c=>c.enroll);
+  $('#course').innerHTML='<option value="">Select a course</option>'+d.categories.map(k=>{const l=st.list.filter(c=>c.cat===k.id);return l.length?`<optgroup label="${esc(k.name)}">`+l.map(c=>`<option value="${c.id}">${esc(c.title)} (${rupee(c.price)})</option>`).join('')+'</optgroup>':''}).join('');
+  pick(q.get('course'));
+});
+$('#course').addEventListener('change',e=>pick(e.target.value));
+document.querySelectorAll('input[name=m]').forEach(r=>r.addEventListener('change',()=>document.querySelectorAll('.panel').forEach(p=>p.hidden=p.dataset.p!==r.form.m.value)));
+
+async function apply(){
+  const code=$('#code').value.trim(),m=$('#cmsg');
+  if(!st.course){m.className='cmsg err';m.textContent='Select a course first.';return}
+  if(!code){m.className='cmsg err';m.textContent='Enter a coupon code.';return}
+  m.className='cmsg';m.textContent='Checking…';
+  try{
+    const r=await post('/api/coupons/validate',{courseId:st.course.id,code});
+    if(r.valid){st.code=r.coupon;st.discount=r.discount;m.className='cmsg ok';m.textContent=`${r.coupon} applied. You save ${rupee(r.discount)}.`}
+    else{st.code='';st.discount=0;m.className='cmsg err';m.textContent=r.message}
+  }catch(e){m.className='cmsg err';m.textContent=(e.message&&e.message!=='Request failed'&&e.message!=='Failed to fetch')?e.message:'Could not check the coupon right now.'}
+  totals();
+}
+$('#apply').addEventListener('click',apply);
+$('#code').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();apply()}});
+
+function loadRzp(){return new Promise((ok,no)=>{if(window.Razorpay)return ok();const s=document.createElement('script');s.src='https://checkout.razorpay.com/v1/checkout.js';s.onload=ok;s.onerror=()=>no(new Error('Could not load the payment window. Check your connection.'));document.head.appendChild(s)})}
+function done(o,paid,name,phone){
+  const c=st.course;
+  $('#page').innerHTML=`<div class="done"><div class="tick">${ic('check',34)}</div><h1>${paid?'Payment successful':'Order received'}</h1>
+  <p>${paid?`Thank you, ${esc(name.split(' ')[0])}! Your enrolment is confirmed.`:'Your order is saved. Online payments are being set up, so please confirm payment with the academy on WhatsApp.'}</p>
+  <dl><dt>Order ID</dt><dd>${o.orderId}</dd><dt>Course</dt><dd>${esc(c.title)}</dd><dt>Amount</dt><dd>${rupee(o.amount)}</dd><dt>Contact</dt><dd>${esc(phone)}</dd></dl>
+  <p>${paid?'Our team will contact you shortly with the next steps.':''}</p>
+  <div class="cta"><a class="btn primary" target="_blank" rel="noopener" href="${WA(o.orderId)}">${paid?'Message us on WhatsApp':'Confirm on WhatsApp'}</a><a class="btn ghost" href="/">Back to home</a></div></div>`;
+  scrollTo({top:0});
+}
+$('#co').addEventListener('submit',async e=>{
+  e.preventDefault();if(st.busy||!st.course)return;const err=$('#err');err.textContent='';
+  const name=$('#name').value.trim(),phone=$('#phone').value.replace(/\D/g,'').slice(-10),email=$('#email').value.trim(),method=e.target.m.value;
+  if(name.length<2)return err.textContent='Please enter your full name.';
+  if(!/^[6-9]\d{9}$/.test(phone))return err.textContent='Enter a valid 10-digit mobile number.';
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email))return err.textContent='Enter a valid email address.';
+  if(!$('#terms').checked)return err.textContent='Please accept the terms to continue.';
+  st.busy=true;totals();$('#pay').textContent='Preparing payment…';
+  const reset=()=>{st.busy=false;totals()};
+  try{
+    const o=await post('/api/orders',{courseId:st.course.id,name,phone,email,coupon:st.code});
+    if(o.demo)return done(o,false,name,phone);
+    await loadRzp();
+    const prefill={name,email,contact:phone,method};
+    if(method==='upi'&&$('#vpa').value.trim())prefill.vpa=$('#vpa').value.trim();
+    if(method==='netbanking'&&$('#bank').value)prefill.bank=$('#bank').value;
+    const rz=new Razorpay({key:o.razorpay.key,amount:o.razorpay.amount,currency:'INR',order_id:o.razorpay.order_id,name:'Royz Academy',description:st.course.title,image:location.origin+'/assets/logo.webp',prefill,theme:{color:'#6845e8'},
+      modal:{ondismiss:reset},
+      handler:async r=>{try{await post('/api/payments/verify',{orderId:o.orderId,...r});done(o,true,name,phone)}catch{done(o,true,name,phone)}}});
+    rz.on('payment.failed',r=>{err.textContent=(r.error&&r.error.description)||'Payment failed. Please try again.';reset()});
+    rz.open();
+  }catch(ex){
+    err.innerHTML=(ex.message&&ex.message!=='Failed to fetch')?esc(ex.message):`We couldn't reach the server. <a style="color:#6845e8;font-weight:700;text-decoration:underline" target="_blank" rel="noopener" href="${WA()}">Enrol via WhatsApp instead</a>.`;
+    reset();
+  }
+});
+</script>
+</body></html>

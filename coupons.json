@@ -1,0 +1,3 @@
+{"WELCOME10":{"type":"percent","value":10,"maxDiscount":600,"active":true},
+"ROYZ500":{"type":"flat","value":500,"minAmount":4000,"active":true},
+"STUDENT15":{"type":"percent","value":15,"maxDiscount":1000,"expires":"2027-03-31","active":true}}

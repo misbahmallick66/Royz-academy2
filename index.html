@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#6845e8">
+<meta name="description" content="Royz Academy, Kolkata. Computer courses, IGNOU, NIOS, management and designing programmes with admission guidance. Admissions open 2026.">
+<title>Royz Academy | Learn Smarter. Grow Faster.</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+section{padding:96px 0;content-visibility:auto;contain-intrinsic-size:auto 640px}.soft{background:var(--soft)}
+.head{max-width:620px;margin-bottom:44px}.head h2{font-size:clamp(30px,4vw,44px);margin:14px 0 14px}.head p{font-size:15px}
+/* hero */
+.hero{padding:64px 0 80px;content-visibility:visible}.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(42px,5.8vw,74px);line-height:1;margin:20px 0 22px}.hero p.lead{font-size:17px;max-width:480px;margin-bottom:30px}.cta{display:flex;gap:12px;flex-wrap:wrap}
+.facts{display:flex;gap:0;margin-top:44px;border-top:1px solid var(--line);padding-top:24px}.facts div{padding-right:28px;margin-right:28px;border-right:1px solid var(--line)}.facts div:last-child{border:0;margin:0;padding:0}.facts b{display:block;font:800 24px Manrope;letter-spacing:-.03em}.facts span{font-size:12px;color:var(--muted)}
+.hero-img{position:relative}.hero-img img{width:100%;height:520px;object-fit:cover;border-radius:28px}.badge{position:absolute;left:-18px;bottom:28px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 18px;box-shadow:0 18px 40px #12111f1a;display:flex;gap:12px;align-items:center}.badge i{width:38px;height:38px;border-radius:11px;background:#fff3e4;color:var(--orange);display:grid;place-items:center}.badge b{display:block;font:800 14px Manrope}.badge small{font-size:12px;color:var(--muted)}
+/* trust */
+.trust{border-block:1px solid var(--line);padding:28px 0;content-visibility:visible}.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.t{display:flex;gap:12px;align-items:center;font-weight:700;font-size:14px}.t i{width:42px;height:42px;border-radius:12px;background:#efebff;color:var(--purple);display:grid;place-items:center}
+/* courses */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}.tabs button{border:1px solid var(--line);background:#fff;border-radius:100px;padding:9px 16px;font:700 13px "DM Sans";color:#45455a;cursor:pointer;white-space:nowrap}.tabs button span{opacity:.55;margin-left:6px;font-weight:500}.tabs button:hover{border-color:var(--ink)}.tabs button[aria-selected=true]{background:var(--ink);border-color:var(--ink);color:#fff}
+.rows{display:grid;grid-template-columns:1fr 1fr;gap:14px}.row{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;transition:border-color .2s,box-shadow .2s}.row:hover{border-color:#cfc8f0;box-shadow:0 10px 30px #3a2c8012}
+.row-ic{width:44px;height:44px;border-radius:12px;background:#f3f0ff;color:var(--purple);display:grid;place-items:center}.row-main{flex:1;min-width:0}.row-main h3{font-size:16px;letter-spacing:-.02em;line-height:1.25}.row-main p{font-size:12.5px;margin:4px 0 6px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.meta{font-size:11.5px;font-weight:700;color:var(--purple)}
+.buy{text-align:right;display:flex;flex-direction:column;gap:8px;align-items:flex-end}.buy b{font:800 18px Manrope;letter-spacing:-.03em}.buy s{font-size:11px;color:#9a98ad;margin-left:6px;font-weight:400}
+.more{margin-top:28px;font-size:14px}.more a{color:var(--purple);font-weight:700}
+/* about */
+.about .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}.about-box{background:var(--ink);color:#fff;border-radius:28px;padding:44px;position:relative;overflow:hidden}.about-box:after{content:"";position:absolute;right:-60px;top:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(var(--orange),transparent 70%);opacity:.35}
+.about-box img{height:84px;width:auto;background:#fff;border-radius:16px;padding:7px;margin-bottom:26px}.about-box h3{font-size:26px;margin-bottom:10px}.about-box p{color:#b9b8cc;font-size:14px}.about-box .reg{margin-top:22px;padding-top:20px;border-top:1px solid #ffffff22;font-size:12px}
+.about h2{font-size:clamp(30px,4vw,44px);margin:14px 0 18px}.about p+p{margin-top:12px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}.stat{border:1px solid var(--line);border-radius:var(--r);padding:18px}.stat b{display:block;font:800 22px Manrope;color:var(--purple)}.stat span{font-size:12px;color:var(--muted)}
+/* services */
+.svc{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff}.svc article{padding:30px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.svc article:nth-child(3n){border-right:0}.svc article:nth-child(n+4){border-bottom:0}.svc i{width:42px;height:42px;border-radius:12px;background:#f3f0ff;color:var(--purple);display:grid;place-items:center;margin-bottom:18px}.svc h3{font-size:17px;margin-bottom:6px}.svc p{font-size:13px}
+/* cta */
+.band{padding:0 0 96px;content-visibility:visible}.band .box{background:linear-gradient(120deg,var(--ink) 55%,#2a2160);border-radius:28px;padding:64px;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}.band h2{font-size:clamp(28px,3.6vw,42px);max-width:520px}.band h2 em{font-style:normal;color:var(--orange)}.band p{color:#b9b8cc;margin-top:12px}.band .btn{background:#fff;color:var(--ink)}.band .btn:hover{background:var(--orange);color:var(--ink)}
+/* contact */
+.contact .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}.contact h2{font-size:clamp(30px,4vw,44px);margin:14px 0 14px}.line{display:flex;gap:14px;margin-top:26px}.line i{width:44px;height:44px;border-radius:12px;background:#fff;border:1px solid var(--line);color:var(--purple);display:grid;place-items:center}.line b{display:block;font-size:14px}.line span{font-size:13.5px;color:var(--muted)}.line a:hover{color:var(--purple)}
+.form{background:#fff;border:1px solid var(--line);border-radius:22px;padding:32px}.form h3{font-size:22px;margin-bottom:6px}.form>p{font-size:13px;margin-bottom:22px}.form .btn{width:100%;margin-top:18px}.status{font-size:13px;min-height:20px;margin-top:12px}.hp{position:absolute;left:-9999px}
+@media(max-width:900px){section{padding:68px 0}.hero .wrap,.about .wrap,.contact .wrap{grid-template-columns:1fr;gap:38px}.hero-img img{height:340px}.badge{left:12px}.trust .wrap{grid-template-columns:1fr 1fr}.rows{grid-template-columns:1fr}.svc{grid-template-columns:1fr 1fr}.svc article{border-right:1px solid var(--line)!important;border-bottom:1px solid var(--line)!important}.svc article:nth-child(2n){border-right:0!important}.svc article:nth-child(n+5){border-bottom:0!important}.band .box{padding:40px 28px}}
+@media(max-width:560px){.tabs{flex-wrap:nowrap;overflow-x:auto;margin-inline:-20px;padding:0 20px 6px;scrollbar-width:none}.facts div{padding-right:16px;margin-right:16px}.facts b{font-size:20px}.svc{grid-template-columns:1fr}.svc article{border-right:0!important;border-bottom:1px solid var(--line)!important}.svc article:last-child{border-bottom:0!important}.row{flex-wrap:wrap}.buy{flex-direction:row;width:100%;justify-content:space-between;align-items:center}.about-box{padding:30px}.stats{grid-template-columns:1fr}.form{padding:22px}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="#home" aria-label="Royz Academy home"><img src="assets/logo.webp" width="30" height="38" alt=""><span><b>Royz Academy</b><small>LEARN • GROW • SUCCEED</small></span></a>
+  <nav class="links" id="links" aria-label="Main"><a href="#courses">Courses</a><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
+  <div class="nav-r"><a class="btn sm primary" href="#courses">Enroll now</a><button class="burger" id="burger" aria-label="Menu" aria-expanded="false"></button></div>
+</div></header>
+
+<main>
+<section class="hero" id="home"><div class="wrap">
+  <div>
+    <span class="kicker">Admissions open 2026</span>
+    <h1>Learn <span class="accent">smarter.</span><br>Grow faster.</h1>
+    <p class="lead">Computer courses, IGNOU, NIOS, management and designing programmes, with guidance at every step. Skills today, a brighter tomorrow.</p>
+    <div class="cta"><a class="btn primary" href="#courses">Explore courses <span data-i="arrow" data-s="16"></span></a><a class="btn ghost" href="#contact">Talk to us</a></div>
+    <div class="facts"><div><b>2016</b><span>Established</span></div><div><b id="count">60+</b><span>Programmes</span></div><div><b>Govt. of WB</b><span>Registered</span></div></div>
+  </div>
+  <div class="hero-img"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=75" width="900" height="520" alt="Students learning together" fetchpriority="high" decoding="async"><div class="badge"><i data-i="cap" data-s="20"></i><div><b>Kolkata</b><small>Picnic Garden, Tiljala</small></div></div></div>
+</div></section>
+
+<div class="trust"><div class="wrap">
+  <div class="t"><i data-i="book"></i>Quality education</div><div class="t"><i data-i="users"></i>Experienced faculty</div><div class="t"><i data-i="rupee"></i>Affordable fees</div><div class="t"><i data-i="headset"></i>Guidance &amp; support</div>
+</div></div>
+
+<section id="courses"><div class="wrap">
+  <div class="head"><span class="kicker">Our courses</span><h2>One academy, <span class="accent">many opportunities.</span></h2><p>Pick a category, choose your course and enroll online in a minute.</p></div>
+  <div class="tabs" id="tabs" role="tablist" aria-label="Course categories"></div>
+  <div class="rows" id="rows" aria-live="polite"></div>
+  <p class="more">And many more programmes available. <a href="#contact">Ask us about yours →</a></p>
+</div></section>
+
+<section class="soft about" id="about"><div class="wrap">
+  <div class="about-box"><img src="assets/logo.webp" width="66" height="84" alt="Royz Academy" loading="lazy"><h3>Learn. Upgrade. Grow.</h3><p>Education and skills that move you forward, from first steps to a career-ready finish.</p><div class="reg">Regd. under Govt. of WB<br>Regd. No. S/2L/63283</div></div>
+  <div><span class="kicker">About Royz Academy</span><h2>Built for your <span class="accent">next chapter.</span></h2>
+    <p>Since 2016, Royz Academy has helped learners across Kolkata move forward with clear guidance, structured tuition and hands-on computer education.</p>
+    <p>Whether you are completing school through NIOS, studying with IGNOU, or building workplace-ready digital and design skills, we help you take the next step with confidence.</p>
+    <div class="stats"><div class="stat"><b>NIOS</b><span>Class 5th to 12th</span></div><div class="stat"><b>IGNOU</b><span>All programmes</span></div><div class="stat"><b>IT</b><span>Practical skills</span></div></div>
+  </div>
+</div></section>
+
+<section id="services"><div class="wrap">
+  <div class="head"><span class="kicker">Support</span><h2>More than a <span class="accent">classroom.</span></h2><p>Helpful support for every stage of your learning journey.</p></div>
+  <div class="svc">
+    <article><i data-i="compass"></i><h3>Admission Guidance</h3><p>Understand the steps and prepare the documents you need.</p></article>
+    <article><i data-i="file"></i><h3>Programme Selection</h3><p>Pick the programme that fits your goals.</p></article>
+    <article><i data-i="pen"></i><h3>Form Filling Support</h3><p>Accurate, hassle-free form filling.</p></article>
+    <article><i data-i="users"></i><h3>Study Assistance</h3><p>Clear help to plan and understand your studies.</p></article>
+    <article><i data-i="cap"></i><h3>Exam Preparation</h3><p>Focused preparation with experienced faculty.</p></article>
+    <article><i data-i="laptop"></i><h3>Practical Training</h3><p>Hands-on learning in modern lab facilities, with a certificate on completion.</p></article>
+  </div>
+</div></section>
+
+<div class="band"><div class="wrap"><div class="box"><div><h2>Your future <em>starts here.</em></h2><p>Learn today. Lead tomorrow. Admissions are open for 2026.</p></div><a class="btn" href="#courses">Enroll now <span data-i="arrow" data-s="16"></span></a></div></div></div>
+
+<section class="soft contact" id="contact"><div class="wrap">
+  <div><span class="kicker">Contact</span><h2>Let's get you <span class="accent">started.</span></h2><p>Tell us what you want to study and the team will help you with the next steps.</p>
+    <div class="line"><i data-i="pin"></i><div><b>Visit us</b><span>Picnic Garden Road, Tiljala<br>Kolkata, West Bengal 700039</span></div></div>
+    <div class="line"><i data-i="phone"></i><div><b>Call or WhatsApp</b><span><a href="tel:+918981722243">8981722243</a> &nbsp;|&nbsp; <a href="tel:+918240491416">8240491416</a></span></div></div>
+    <div class="line"><i data-i="mail"></i><div><b>Email</b><span><a href="mailto:infotheroyzacademy@gmail.com">infotheroyzacademy@gmail.com</a></span></div></div>
+  </div>
+  <form class="form" id="form" novalidate><h3>Make an enquiry</h3><p>Fill in your details and we'll get back to you.</p>
+    <div class="grid2">
+      <div class="field"><label for="name">Full name *</label><input id="name" name="name" placeholder="Your name" required minlength="2" autocomplete="name"></div>
+      <div class="field"><label for="phone">Phone *</label><input id="phone" name="phone" type="tel" inputmode="numeric" placeholder="10-digit mobile" required autocomplete="tel-national"></div>
+      <div class="field full"><label for="email">Email (optional)</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email"></div>
+      <div class="field full"><label for="course">Interested in *</label><select id="course" name="course" required><option value="">Select a course or service</option></select></div>
+      <div class="field full"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell us what you want to learn..."></textarea></div>
+      <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    </div>
+    <button class="btn primary" type="submit" id="send">Send enquiry</button><div class="status" id="status" role="status" aria-live="polite"></div>
+  </form>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="foot"><div><a class="brand" href="#home"><img src="assets/logo.webp" width="36" height="46" alt=""><span><b>Royz Academy</b><small>LEARN • GROW • SUCCEED</small></span></a><p>Regd. under Govt. of WB · Regd. No. S/2L/63283<br>Picnic Garden, Kolkata, West Bengal</p></div>
+  <nav aria-label="Footer"><a href="#courses">Courses</a><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a></nav></div>
+  <div class="copy"><span>© <span data-year></span> Royz Academy. All rights reserved.</span><span>Call / WhatsApp: 8981722243 | 8240491416</span></div>
+</div></footer>
+
+<script src="assets/app.js"></script>
+<script>
+let COURSES=[],CATS=[],CAT='';
+const row=c=>{
+  const buy=c.enroll?`<div class="buy"><span><b>${rupee(c.price)}</b>${c.mrp?`<s>${rupee(c.mrp)}</s>`:''}</span><a class="btn sm primary" href="checkout.html?course=${c.id}">Enroll</a></div>`
+   :`<div class="buy"><b>Free</b><a class="btn sm ghost" href="#contact" data-course="${esc(c.title)}">Enquire</a></div>`;
+  return `<article class="row"><div class="row-ic">${ic(c.icon)}</div><div class="row-main"><h3>${esc(c.title)}</h3><p>${esc(c.desc)}</p><span class="meta">${esc(c.duration)} · ${esc(c.mode)}</span></div>${buy}</article>`;
+};
+function render(){
+  $('#tabs').innerHTML=CATS.map(k=>`<button type="button" role="tab" data-cat="${k.id}" aria-selected="${k.id===CAT}">${esc(k.name)}<span>${COURSES.filter(c=>c.cat===k.id).length}</span></button>`).join('');
+  $('#rows').innerHTML=COURSES.filter(c=>c.cat===CAT).map(row).join('');
+}
+catalog().then(d=>{
+  COURSES=d.courses;CATS=d.categories;CAT=CATS[0].id;render();
+  $('#count').textContent=COURSES.length+'+';
+  $('#course').innerHTML='<option value="">Select a course or service</option>'+CATS.map(k=>`<optgroup label="${esc(k.name)}">`+COURSES.filter(c=>c.cat===k.id).map(c=>`<option>${esc(c.title)}</option>`).join('')+'</optgroup>').join('')+'<option>Other</option>';
+});
+document.addEventListener('click',e=>{
+  const t=e.target.closest('[data-cat]');if(t){CAT=t.dataset.cat;render();return}
+  const c=e.target.closest('[data-course]');if(c)$('#course').value=c.dataset.course;
+});
+const form=$('#form'),status=$('#status'),send=$('#send');
+form.addEventListener('submit',async e=>{
+  e.preventDefault();if(!form.reportValidity())return;
+  const p=Object.fromEntries(new FormData(form).entries());send.disabled=true;send.textContent='Sending…';status.textContent='';
+  try{await post('/api/enquiries',p);status.style.color='#287d4e';status.textContent='Thank you! We have received your enquiry and will contact you soon.';form.reset()}
+  catch(err){
+    const m=`Royz Academy enquiry\nName: ${p.name}\nPhone: ${p.phone}\nEmail: ${p.email||'-'}\nCourse: ${p.course}\nMessage: ${p.message||'-'}`;
+    status.style.color='#6b587b';
+    status.innerHTML=(err.message&&err.message!=='Failed to fetch'&&err.message!=='Request failed')?esc(err.message):`Could not send right now. <a style="color:#6845e8;font-weight:700;text-decoration:underline" target="_blank" rel="noopener" href="https://wa.me/918981722243?text=${encodeURIComponent(m)}">Send this enquiry on WhatsApp</a>.`;
+  }finally{send.disabled=false;send.textContent='Send enquiry'}
+});
+</script>
+</body></html>
